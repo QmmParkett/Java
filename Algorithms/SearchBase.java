@@ -28,11 +28,10 @@ public class SearchBase {
 		if (!indeces.isEmpty()) {
 			if (indeces.size() == 1) {
 				System.out.print("The target " + target + " was found at index ");
-				indecesOfTargetsFound.forEach(value -> System.out.print(value));
 			} else {
 				System.out.print("The target " + target + " was found at indeces ");
-				indecesOfTargetsFound.forEach(value -> System.out.print(value + " "));
 			}
+			indecesOfTargetsFound.forEach(value -> System.out.print(value + " "));
 		} else {
 			System.out.println("The target " + target + " was not found!");
 		}

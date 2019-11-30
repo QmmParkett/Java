@@ -42,7 +42,6 @@ public class BinarySearch extends SearchBase {
 				low = mid + 1;
 			}
 		}
-		System.out.println("Target was not found");
 	}
 
 }
