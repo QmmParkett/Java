@@ -11,7 +11,9 @@ public class SearchBase {
 
 	public static void printArray(int[] array) {
 		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] + " ");
+			if (array[i] != 0) {
+				System.out.print(array[i] + " ");
+			}
 		}
 		System.out.println();
 	}
@@ -32,6 +34,8 @@ public class SearchBase {
 				System.out.print("The target " + target + " was found at indeces ");
 			}
 			indecesOfTargetsFound.forEach(value -> System.out.print(value + " "));
+			System.out.println();
+			indecesOfTargetsFound.clear();
 		} else {
 			System.out.println("The target " + target + " was not found!");
 		}
